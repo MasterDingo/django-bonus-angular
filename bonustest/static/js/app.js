@@ -63,7 +63,8 @@ app.controller('UserCtrl', ['$scope', 'User', '$http', '$route',
     $scope.errorMessage = obj.message
   }
 
-  $scope.login = function() {
+  $scope.login = function($event) {
+    console.log($scope)
     $http.post('/api/login',
               {
                 'username': $scope.loginInfo.username,
@@ -74,13 +75,14 @@ app.controller('UserCtrl', ['$scope', 'User', '$http', '$route',
         $scope.user = answer.data.user
         $scope.loginInfo.username = "";
         $scope.loginInfo.password = "";
+        $scope.hideLoginForm();
         $route.reload();
       } else {
         loginError(answer.data)
       }
     }, loginError)
-    .finally($scope.hideLoginForm)
 
+    $event.preventDefault();
     return false;
   }
 

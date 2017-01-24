@@ -8,8 +8,8 @@
 </div>
 <div class="login-form" ng-show="loginFormShown">
   <h2>Вход</h2>
-  <div ng-show="{{ errorMessage }}">{{ errorMessage }}</div>
-  <form action=""  ng-submit="login()">
+  <div ng-show="errorMessage">{{ errorMessage }}</div>
+  <form action="" ng-submit="login($event)">
     <table class="form-table">
       <tr>
         <th>Имя пользователя</th>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-22 16:48+0300\n"
+"POT-Creation-Date: 2017-01-24 22:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,15 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
+#: shop/api/views.py:65
+msgid "Invalid user name or password"
+msgstr "Неверное имя пользователя или пароль"
+
 #: shop/models.py:41
 msgid "category name"
 msgstr "название категории"
 
-#: shop/models.py:47 shop/models.py:97
+#: shop/models.py:47 shop/models.py:102
 msgid "category"
 msgstr "категория"
 
@@ -53,70 +57,60 @@ msgstr "проценты"
 msgid "%(percentage)d%% for %(user)s from %(start_date)s to %(end_date)s"
 msgstr "%(percentage)d%% для %(user)s с %(start_date)s до %(end_date)s"
 
-#: shop/models.py:88
+#: shop/models.py:92
 msgid "bonus"
 msgstr "бонус"
 
-#: shop/models.py:89
+#: shop/models.py:93
 msgid "bonuses"
 msgstr "бонусы"
 
-#: shop/models.py:99
+#: shop/models.py:104
 msgid "name"
 msgstr "название"
 
-#: shop/models.py:103
+#: shop/models.py:108
 msgid "description"
 msgstr "описание"
 
-#: shop/models.py:106
+#: shop/models.py:111
 msgid "base price"
 msgstr "базовая цена"
 
-#: shop/models.py:126
+#: shop/models.py:131
 msgid "product"
 msgstr "товар"
 
-#: shop/models.py:127
+#: shop/models.py:132
 msgid "products"
 msgstr "товары"
 
-#: templates/base.html:13
-msgid "Change user"
-msgstr "Сменить пользователя"
+#~ msgid "Change user"
+#~ msgstr "Сменить пользователя"
 
-#: templates/base.html:14
-msgid "Log out"
-msgstr "Выйти"
+#~ msgid "Log out"
+#~ msgstr "Выйти"
 
-#: templates/base.html:16
-msgid "Log in"
-msgstr "Войти"
+#~ msgid "Log in"
+#~ msgstr "Войти"
 
-#: templates/categories_list.html:4
-msgid "Products categories"
-msgstr "Категории товаров"
+#~ msgid "Products categories"
+#~ msgstr "Категории товаров"
 
-#: templates/categories_list.html:7
-msgid "All products"
-msgstr "Все товары"
+#~ msgid "All products"
+#~ msgstr "Все товары"
 
-#: templates/product.html:7 templates/products_list.html:7
-msgid "All categories"
-msgstr "Все категории"
+#~ msgid "All categories"
+#~ msgstr "Все категории"
 
-#: templates/product.html:11
-msgid "Product name"
-msgstr "Название товара"
+#~ msgid "Product name"
+#~ msgstr "Название товара"
 
-#: templates/product.html:12
-msgid "Price"
-msgstr "Цена"
+#~ msgid "Price"
+#~ msgstr "Цена"
 
-#: templates/product.html:13
-msgid "Description"
-msgstr "Описание"
+#~ msgid "Description"
+#~ msgstr "Описание"
 
-#: templates/products_list.html:4
-msgid "Products in category"
-msgstr "Товары в категории"
+#~ msgid "Products in category"
+#~ msgstr "Товары в категории"

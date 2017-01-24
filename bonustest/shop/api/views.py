@@ -13,6 +13,8 @@ from rest_framework.views import APIView
 from rest_framework.decorators import api_view
 from rest_framework.views import Response
 
+from django.utils.text import ugettext_lazy as _
+
 
 class CategoriesList(generics.ListAPIView):
     queryset = Category.objects.all()
@@ -60,10 +62,7 @@ def login(request):
     else:
         return Response({
             'success': False,
-            'reason': 'incorrect',
-            'request': post_params,
-            'username': username,
-            'password': password
+            'message': _('Invalid user name or password'),
             })
 
 
