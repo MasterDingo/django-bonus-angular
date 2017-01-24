@@ -1,0 +1,12 @@
+<a class="navigation" href="/#/categories">Все категории</a>
+<h4 ng-show="category_id">{{ category_name }}</h4>
+<table cellspacing="0" class="list">
+  <tr ng-repeat="product in products">
+    <td>
+      <a href="/#/product/{{ product.id }}">{{ product.name }}</a>
+    </td>
+    <td>
+      {{ product.price }}
+    </td>
+  </tr>
+</table>

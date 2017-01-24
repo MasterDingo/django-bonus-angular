@@ -1,0 +1,25 @@
+<div ng-show="user.id">
+  {{ user.username }}
+  <a href="" ng-click="showLoginForm()">Сменить пользователя</a>
+  <a href="" ng-click="logout()">Выйти</a>
+</div>
+<div ng-hide="user.id">
+  <a href="" ng-click="showLoginForm()">Войти</a>
+</div>
+<div class="login-form" ng-show="loginFormShown">
+  <h2>Вход</h2>
+  <div ng-show="{{ errorMessage }}">{{ errorMessage }}</div>
+  <form action=""  ng-submit="login()">
+    <table class="form-table">
+      <tr>
+        <th>Имя пользователя</th>
+        <td><input type="text" ng-model="loginInfo.username"></td>
+      </tr>
+      <tr>
+        <th>Пароль</th>
+        <td><input type="password" ng-model="loginInfo.password"></td>
+      </tr>
+    </table>
+    <input type="submit" value="Войти">
+  </form>
+</div>
